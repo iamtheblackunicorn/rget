@@ -1,10 +1,27 @@
 [package]
 name = "rget"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+license = "MIT"
+authors = ["Alexander Abraham <youreccentricity@outlook.com>"]
+description= "A supersonic static-site generator written in Rust."
+homepage = "https://github.com/iamtheblackunicorn/rget"
+repository = "https://github.com/iamtheblackunicorn/rget"
+documentation = "https://github.com/iamtheblackunicorn/rget"
+readme = "README.markdown"
+keywords = [
+  "cli"
+]
+categories = [
+  "command-line-utilities"
+]
+exclude = [
+  "/.github"
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+cleasy = "1.0.0"
+colored = "2.0.0"
 reqwest = "0.11.10"
-tokio = "1.17.0"
+tokio = { version = "1", features = ["full"] }

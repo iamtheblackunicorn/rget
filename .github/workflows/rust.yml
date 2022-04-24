@@ -1,0 +1,30 @@
+on: [push]
+name: RGET CI
+jobs:
+  build_and_test:
+    name: RGET CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: example
+
+      - name: Download a file (Short version.).
+        uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: -- -d https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
+      - name: Download a file (Long version.).
+        uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: -- --download https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
