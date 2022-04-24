@@ -80,4 +80,4 @@ This will produce an executable on the path `rget/target/release/rget`.
 ## NOTE :scroll:
 
 - *RGET :rocket: :fire:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
-- Licensed under the MIT license.## INSTALLATION
+- Licensed under the MIT license.
