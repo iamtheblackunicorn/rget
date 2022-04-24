@@ -14,7 +14,7 @@ Using ***RGET*** is very simple. It supports three commands:
 
 - Download a file from the interwebs.
 
-```rust
+```bash
 $ rget -d https://yoururl.com/yourfile.txt
 # OR
 $ rget --download https://yoururl.com/yourfile.txt
@@ -22,7 +22,7 @@ $ rget --download https://yoururl.com/yourfile.txt
 
 - Display version information:
 
-```rust
+```bash
 $ rget -v
 # OR
 $ rget --version
@@ -30,11 +30,12 @@ $ rget --version
 
 - Get a usage guide:
 
-```rust
+```bash
 $ rget -h
 # OR
 $ rget --help
 ```
+
 ## INSTALLATION :inbox_tray:
 
 I'm assuming you have Rust and Git installed and available from the command line. If you do, run this command to install ***RGET***:
